@@ -1,0 +1,14 @@
+# ENV (TOKENS, SECRETS)
+backend/.env
+
+# Dépendances
+backend/node_modules/
+
+# Base de données locale
+backend/vote.db
+
+# Uploads (photos, csv)
+backend/uploads/
+
+# Logs
+*.log
