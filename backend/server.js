@@ -11,7 +11,7 @@ const cors = require("cors");
 const { body, validationResult } = require("express-validator");
 
 const PORT = process.env.PORT || 4000;
-const ADMIN_TOKEN = process.env.ADMIN_TOKEN || "okHnAqs65J!Z93";
+const ADMIN_TOKEN = process.env.ADMIN_TOKEN;
 const VOTE_END_ISO =
   process.env.VOTE_END_ISO || new Date(Date.now() + 86400000).toISOString();
 
