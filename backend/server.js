@@ -374,12 +374,9 @@ app.get("/status", (req, res) => {
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.get("/", (req, res) => {
-  res.send("Backend Vote Étudiant OK");
+  res.send("✅ Backend Vote Étudiant en ligne");
 });
 
-// ----------------------------
-// DEMARER SERVER
-// ----------------------------
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("Server running");
+  console.log("Server running on port", PORT);
 });
