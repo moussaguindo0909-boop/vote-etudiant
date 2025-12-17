@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { API_URL } from "../config";
+
 
 export default function Results() {
   const [results, setResults] = useState([]);
@@ -52,7 +54,8 @@ export default function Results() {
     if (!timeLeft.finished) return; // ⛔️ On NE charge PAS les résultats avant la fin
 
     const loadResults = () => {
-      fetch("http://localhost:4000/results")
+      fetch(`${API_URL}/results`)
+
         .then((res) => res.json())
         .then((data) => {
           setResults(data.results || []);

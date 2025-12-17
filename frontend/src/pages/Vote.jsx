@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { API_URL } from "../config";
+
 
 export default function Vote() {
   const [formData, setFormData] = useState({
@@ -12,7 +14,7 @@ export default function Vote() {
   const [candidates, setCandidates] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const API_URL = "http://localhost:4000";
+
 
   useEffect(() => {
     fetch(`${API_URL}/candidates`)
