@@ -8,10 +8,10 @@ export default function Reglement() {
       {/* Bouton pour ouvrir le PDF */}
       <div className="mt-8">
         <a
-          href="src/reglement/reglement.pdf"
+          href="/reglement.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
         >
           📄 Ouvrir le règlement (PDF)
         </a>
