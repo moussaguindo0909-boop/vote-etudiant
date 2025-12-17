@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Avbar from "./components/avbar";
+import Avbar from "./components/Avbar";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import Vote from "./pages/Vote";
