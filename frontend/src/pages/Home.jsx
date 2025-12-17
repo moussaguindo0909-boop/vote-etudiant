@@ -17,32 +17,38 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Contenu principale du Hero */}
-        <div className="relative z-10 space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Participez au Vote du Bureau des Étudiants !
-          </h1>
+    {/* Contenu principal du Hero */}
+<div className="relative z-10 space-y-6">
+  <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+    Participez au Vote du Bureau des Étudiants !
+  </h1>
 
-          <p className="text-lg md:text-xl max-w-xl">
-            Explorez les candidats, votez pour vos représentants et suivez les résultats en direct.
-          </p>
+  <p className="text-lg md:text-xl max-w-xl">
+    Explorez les candidats, votez pour vos représentants et suivez les résultats en direct.
+  </p>
 
-          <div className="space-x-4">
-            <Link
-              to="/candidats"
-              className="px-6 py-3 bg-yellow-500 rounded-lg font-semibold hover:bg-yellow-600 transition"
-            >
-              Voir les candidats
-            </Link>
+  {/* Boutons */}
+  <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+    <Link
+      to="/candidats"
+      className="px-6 py-3 bg-yellow-500 rounded-lg font-semibold
+                 hover:bg-yellow-600 transition
+                 text-center w-full sm:w-auto"
+    >
+      Voir les candidats
+    </Link>
 
-            <Link
-              to="/vote"
-              className="px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition"
-            >
-              Voter maintenant
-            </Link>
-          </div>
-        </div>
+    <Link
+      to="/vote"
+      className="px-6 py-3 bg-white text-black rounded-lg font-semibold
+                 hover:bg-gray-200 transition
+                 text-center w-full sm:w-auto"
+    >
+      Voter maintenant
+    </Link>
+  </div>
+</div>
+
 
         {/* TEXTE complémentaire */}
         <div className="relative z-10 bg-black/40 backdrop-blur p-6 md:p-10 rounded-xl shadow-lg mt-10 md:mt-0">
